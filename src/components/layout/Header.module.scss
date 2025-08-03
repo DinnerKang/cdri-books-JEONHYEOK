@@ -1,0 +1,42 @@
+.header {
+  width: 100%;
+  height: $header-height;
+  min-width: 1024px;
+  max-width: 1920px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: $white;
+
+  &_container {
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+    a {
+      text-decoration: none;
+      color: $text-primary;
+    }
+  }
+
+  &_title {
+    @include title-large;
+  }
+
+  &_nav {
+    display: flex;
+    gap: 20px;
+  }
+
+  &_nav_link {
+    padding: 10px 0;
+    @include body-large;
+
+    &.active {
+      border-bottom: 1px solid $primary-color;
+    }
+  }
+}

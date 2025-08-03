@@ -1,0 +1,29 @@
+.button {
+  @include caption;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 115px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.primary {
+  background-color: $primary-color;
+  color: $white;
+}
+
+.secondary {
+  background-color: $light-gray;
+  color: $text-secondary;
+  @include caption;
+}
+
+.outline {
+  background-color: $white;
+  color: $text-subtitle;
+  border: 1px solid $text-subtitle;
+}

@@ -1,0 +1,58 @@
+@use 'variables' as *;
+
+// 타이포그래피 mixins
+@mixin title-large {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-primary;
+}
+
+@mixin title-medium {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+  color: $text-primary;
+}
+
+@mixin title-small {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 18px;
+  color: $text-primary;
+}
+
+@mixin body-large {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $text-primary;
+}
+
+@mixin body-medium {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: $text-primary;
+}
+
+@mixin body-bold {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: $text-primary;
+}
+
+@mixin caption {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 16px;
+  color: $text-primary;
+}
+
+@mixin small {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 10px;
+  color: $text-primary;
+}
